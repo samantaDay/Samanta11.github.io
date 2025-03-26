@@ -6,6 +6,8 @@
  
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&family=Meow+Script&family=Pacifico&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 
 <style>
  
@@ -51,6 +53,7 @@ p {
   background: linear-gradient(bottom, rgba(19,33,30,1), rgba(30,20,50,.4));
   background: -webkit-linear-gradient(bottom, rgba(70,80,50,1), rgba(60,40,550,.4));
   background: -moz-linear-gradient(bottom, rgba(70,90,0,1), rgba(0,40,70,.4));
+  background: -moz-linear-gradient(bottom, rgba(70,90,0,1), rgba(0,40,70,.4));
   padding: 10px;
   line-height: 28px;
   text-align: justify;
@@ -84,6 +87,9 @@ small {
 }
 .dessert{
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhY-GcEh91xOnaPQAXU4HLWNFSKAI2yTVc35zXyAA2rpOYGkh-NRlg_zR-l-RyD7rPvKTt351hM9s0kb7g75q1GpDO89mgWqpVUJjk55q23Wyl7NUdXRMwIcOwBthtC6Sz_ZfaWnxgQa2Kr/?imgmax=800");
+}
+.beverage{
+  background-image: url("https://i.ytimg.com/vi/CcGJWbr1W2g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAd-omqt3sCdpjWXcHWWc0hjuJthg");
 }
 .price {
   float: right;
@@ -138,6 +144,13 @@ small {
   <p>Rosogolla <span class="price">$8</span><br />
   <small> a popular, syrupy dessert from South Asia made of balls of cottage cheese (chhena) dumplings cooked in sugar syrup</small></p>
 </div>
+
+
+<div class="beverage">
+  <input class="quantities" type="number" min="0" style="width: 50px"> 
+  <p>laban <span class="price">$10</span><br />
+  <small>a fermented milk product, commonly enjoyed as a refreshing drink in the Middle East and North Africa. </small></p>
+</div>
  <br><br> 
   <input id="Name" placeholder="Your name">
   <input id="Email" type="email" placeholder="Your email">
@@ -178,7 +191,7 @@ small {
   
     document.querySelector('#submit').addEventListener('click', Submit)
     const quantities = document.querySelectorAll(".quantities") 
-    const itemsList = ["Biriyani", "Fish", "Sweet"]
+    const itemsList = ["Biriyani", "Fish", "Sweet","Beverage"]
   
 
 
